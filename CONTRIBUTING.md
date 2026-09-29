@@ -31,35 +31,22 @@ Avoid names that are confusing, offensive, or already used by another theme.
 
 Step 2: Add Your Theme
 
-Open:
-
-src/generateTrophy.js
-
+Open: src/generateTrophy.js
 
 Add your new SVG theme to the existing theme definitions.
 
 A basic theme can look like this:
-
-your_theme_name: `
+```
+your_theme_name: 
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="800"
-    height="250"
-    viewBox="0 0 800 250"
-  >
+    xmlns="http://www.w3.org/2000/svg"  width="800" height="250"  viewBox="0 0 800 250">
     <rect width="800" height="250" fill="#111827" />
 
-    <text
-      x="400"
-      y="120"
-      text-anchor="middle"
-      fill="#ffffff"
-      font-size="28"
-    >
+    <text  x="400"  y="120" text-anchor="middle" fill="#ffffff" font-size="28" >
       Contributions: ${data.total_contributions}
     </text>
   </svg>
-`,
+  ```
 
 
 Important: Adapt this example to the existing structure in src/generateTrophy.js. Do not replace or remove existing themes.
